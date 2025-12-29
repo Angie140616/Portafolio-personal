@@ -1,0 +1,102 @@
+@import "bootstrap/scss/bootstrap";
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
+  background-size: 22px 22px;
+  background-color: #0b1324;
+  color: #fff;
+
+  .body-home{
+    width: 100%;
+    .body-home__container1{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .body-home_subcontainer1{
+        width: 49%;
+        height: 500px;
+        text-align: center;
+        margin: 3rem 0 0 5rem;
+        
+      h1 {
+        margin-top: 8rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 
+          transform 0.4s ease,
+          letter-spacing 0.4s ease,
+          text-decoration-color 0.3s ease;
+      }
+
+h1:hover {
+  transform: translateY(-6px) scale(1.02);
+  text-decoration: underline overline;
+  letter-spacing: 1px;
+}
+
+        h2{
+          margin: 2rem 0 3rem 0;
+        }
+        img{
+          width: 400px;
+          height: auto;
+        }
+      }
+      .body-home_subcontainer2{
+        margin-top: 3rem;
+        width: 49%;
+        height: 500px;
+        text-align: center;
+        margin: 3rem 5rem 0 0;
+        img{
+          width: 350px;
+          height: auto;
+          margin-top: 3rem;
+          cursor: pointer;
+          transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        img:hover{
+          transform: scale(1.1);
+          box-shadow: 0 10px 30px rgba(0,0,0,.3);
+        }
+      }
+     
+    }
+  }
+  
+  .wave-separator {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.wave-separator svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.wave-separator path {
+  fill: #4882d2;
+  animation: waveFloat 5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* 🌊 movimiento un poquito más marcado */
+@keyframes waveFloat {
+  0% {
+    transform: scaleY(1) translateY(0);
+  }
+  50% {
+    transform: scaleY(1.08) translateY(6px);
+  }
+  100% {
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+}
+
