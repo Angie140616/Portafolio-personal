@@ -2,6 +2,7 @@
 import { Fragment } from 'react';
 import animeYo from '../../components/img/AnimeYo.png';
 import tecnologias from '../../components/img/tecnologias.png'
+import yoImg from '../../components/img/yp.jpg'
 
 export const BodyHome = () => {
   return (
@@ -27,8 +28,16 @@ export const BodyHome = () => {
          L500.00,0.00 L0.00,0.00 Z" />
   </svg>
 </div>
-
-    
+    <section className='body-home2'>
+      <div className="about-me1">
+        <div className="imgYo">
+          <img src={yoImg} alt="" />
+        </div>
+      </div>
+        <div className="about-me2">
+            <p>Soy desarrolladora full stack con afinidad por el frontend y la experiencia de  usuario. Disfruto construir interfaces bien pensadas, cuidar los detalles visuales y entender el proposito detras de cada proyecto. Me motiva aprender constantemente, mejorar mis habilidades y enfrentar nuevos desafíos como una oportunidad de crecimiento personal y profesional, soy una persona autodidacta que quiere aprender cada dia más y más cosas </p>
+        </div>
+    </section>
     </Fragment>
   );
 };

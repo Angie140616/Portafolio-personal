@@ -1,4 +1,6 @@
+// src/styles/home.scss
 @import "bootstrap/scss/bootstrap";
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -97,6 +99,80 @@ h1:hover {
     transform: scaleY(1) translateY(0);
   }
 }
-
 }
 
+.body-home2{
+    display: flex;
+    justify-content: space-around;
+  .about-me1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 48%;
+    height: 500px;
+    
+    .imgYo {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .imgYo img {
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      object-fit: cover;
+      z-index: 2;
+    }
+
+  .imgYo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: conic-gradient(
+        #00ffff,
+        #7f00ff,
+        #ff00aa,
+        #00ffff
+      );
+      animation: spin 5s linear infinite;
+
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - 10px),
+      #000 calc(100% - 10px)
+    );
+
+    mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - 10px),
+      #000 calc(100% - 10px)
+    );
+
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  }
+
+
+  .about-me2{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 48%;
+    height: 500px;
+  }
+  
+  
+}
