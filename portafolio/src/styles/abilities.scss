@@ -1,0 +1,45 @@
+.skill-card {
+  width: 400px;
+  border: 1px solid #3a5f7d;
+  background: rgba(10, 25, 47, 0.9);
+}
+
+.skill-card-title {
+  background: #1f3cff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+.skill-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.skill-card-content img {
+  width: 90px;
+  height: auto;
+}
+
+.abilities-container, .abilities-container2 {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px;
+    margin: auto;
+}
+
+.abilities{
+    h4{
+        margin: 3rem auto;
+        text-align: center;
+    }
+}
+
+
