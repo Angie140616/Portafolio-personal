@@ -9,6 +9,13 @@ import react from '../../components/img/tecnologias/react.png';
 import php from '../../components/img/tecnologias/PHP-logo.svg.png';
 import mysql from '../../components/img/tecnologias/mysql.png';
 import mvc from '../../components/img/tecnologias/mvc.png';
+import scrum from '../../components/img/tecnologias/scrum.png';
+import git from '../../components/img/tecnologias/git.webp';
+import lucidchard from '../../components/img/tecnologias/Lucidchard.png';
+import miro from '../../components/img/tecnologias/miro.svg';
+import trello from '../../components/img/tecnologias/trello.svg';
+import npm from '../../components/img/tecnologias/Npm.png';
+import node from '../../components/img/tecnologias/node.webp';
 
 import yoImg from '../../components/img/yp.jpg';
 
@@ -65,16 +72,38 @@ export const BodyHome = () => {
             <img src={php} alt="PHP" />
             <img src={mysql} alt="MySQL" />
             <img src={mvc} alt="MVC" />
+             <img src={node} alt="Node" />
           </ComponentAbilities>
       </div>
         <h4>Herramientas y metodologías</h4>
         <div className="abilities-container2">
           <ComponentAbilities title="Metodologías">
-
+            <img src={scrum} alt="Scrum" />
           </ComponentAbilities>
-
-          <ComponentAbilities title="Herramientas" />
+          <ComponentAbilities title="Herramientas">
+            <img src={git} alt="git" />
+            <img src={lucidchard} alt="lucidchard" />
+            <img src={miro} alt="" />
+            <img src={trello} alt="" />
+            <img src={npm} alt="" />
+          </ComponentAbilities>
+          <br />
         </div>
+      </section>
+      
+      <div className="wave-separator">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+          <path
+            d="M0.00,49.98 
+              C247.45,179.92 267.21,-37.17 500.00,49.98 
+              L500.00,0.00 L0.00,0.00 Z"
+          />
+        </svg>
+      </div>
+      <br />
+      <section className='proyectos'>
+          <h4>Mis proyectos</h4>
+          <p>Aplicaciones reales creadas y en desarrollo</p>
       </section>
     </Fragment>
   );
