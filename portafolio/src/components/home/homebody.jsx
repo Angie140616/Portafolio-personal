@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from 'react';
 
-import ComponentAbilities from '../UI/componentAbilities';
+import ComponentAbilities from '../cardAbilities/componentAbilities';
 
 
 // imágenes
@@ -78,23 +78,8 @@ useEffect(() => {
 
       <section className='abilities'>
         <h4>Habilidades técnicas</h4>
-
-        <div className="abilities-container">
-          <ComponentAbilities title="Front-end">
-            <img src={javascript} alt="JavaScript" />
-            <img src={css} alt="Css" />
-            <img src={boostrap} alt="Bootstrap" />
-            <img src={sass} alt="Sass" />
-            <img src={react} alt="React" />
-          </ComponentAbilities>
-
-          <ComponentAbilities title="Back-end">
-            <img src={php} alt="PHP" />
-            <img src={mysql} alt="MySQL" />
-            <img src={mvc} alt="MVC" />
-             <img src={node} alt="Node" />
-          </ComponentAbilities>
-      </div>
+      
+       
         <h4>Herramientas y metodologías</h4>
         <div className="abilities-container2">
           <ComponentAbilities title="Metodologías">
@@ -127,149 +112,8 @@ useEffect(() => {
 
   <div className="projects-grid">
 
-    <article className="project-card">
-      <div className="card-header">
-        🍽️ Aplicación Web de Recetario
-      </div>
+     <ComponentAbilities title="Herramientas"></ComponentAbilities>
 
-      <div className="card-image">
-        <img
-          src={recetarioProject}
-          alt="Proyecto Recetario"
-          className="imgProjects"
-        />
-      </div>
-
-      <p className="description">
-        Aplicación web enfocada en el recetario de una panadería, con gestión visual de recetas mediante imágenes y pasos detallados.
-        Permite crear y modificar recetas y se complementa con un inventario básico de panes e insumos, con control de sesiones y operaciones como entradas, salidas y traslados.
-      </p>
-
-      <div className="tags">
-        <span>PHP</span>
-        <span>JavaScript</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>SQL</span>
-        <span>MVC</span>
-        <span>GIT</span>
-      </div>
-
-      <ul className="features">
-        <li>Funcionalidades principales:</li>
-        <li>CRUD de recetas con imágenes</li>
-        <li>Inventario básico</li>
-        <li>Control de sesiones</li>
-      </ul>
-
-      <span className="status finished">Finalizado</span>
-
-      <a
-        href="https://github.com/tu-usuario/tu-repo"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="git-btn"
-      >
-        Git
-      </a>
-    </article>
-
-    <article className="project-card">
-      <div className="card-header">
-        Sistema Web de Inventarios con Gestión de Proveedores y Reportes PDF
-      </div>
-
-      <div className="card-image">
-        <img
-          src={projectGrd}
-          alt="Proyecto Inventarios"
-          className="imgProjects"
-        />
-      </div>
-
-      <p className="description">
-        Sistema web de inventarios desarrollado como proyecto de grado, con gestión de productos y proveedores, control de sesiones y generación de informes en PDF por tipo de movimiento o rangos mensuales.
-      </p>
-
-      <div className="tags">
-        <span>PHP</span>
-        <span>JavaScript</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>SQL</span>
-        <span>MVC</span>
-        <span>GIT</span>
-      </div>
-
-      <ul className="features">
-        <li>Funcionalidades principales:</li>
-        <li>Gestión de usuarios y sesiones por roles</li>
-        <li>Administración de inventario</li>
-        <li>Control de proveedores</li>
-        <li>Reportes PDF</li>
-        <li>Historial de movimientos</li>
-      </ul>
-
-      <span className="status finished">Finalizado</span>
-
-      <a
-        href="https://github.com/tu-usuario/tu-repo"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="git-btn"
-      >
-        Git
-      </a>
-    </article>
-
-    <article className="project-card">
-      <div className="card-header">
-        Sistema de Ventas con Control por Mesas (En desarrollo)
-      </div>
-
-      <div className="card-image">
-        <img
-          src={projectGrd}
-          alt="Proyecto Ventas"
-          className="imgProjects"
-        />
-      </div>
-
-      <p className="description">
-        Aplicación para la gestión de ventas en local que permite registrar productos mediante escaneo de códigos de barras, controlar el consumo por mesa y cliente, y generar un resumen de ventas. Actualmente en desarrollo y migración a Electron.
-      </p>
-
-      <div className="tags">
-        <span>Node.js</span>
-        <span>JavaScript</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>SQL</span>
-        <span>Electron</span>
-        <span>GIT</span>
-      </div>
-
-      <ul className="features">
-        <li>Funcionalidades principales:</li>
-        <li>Registro de productos con escaneo de código de barras</li>
-        <li>CRUD de productos</li>
-        <li>Control de consumo por mesa y cliente</li>
-        <li>Cierre de cuenta y acumulación automática de ventas</li>
-        <li>Resumen de ventas</li>
-        <li>Migración a escritorio con Electron (en progreso)</li>
-      </ul>
-
-      <span className="status">En desarrollo</span>
-
-      <a
-        href="https://github.com/tu-usuario/tu-repo"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="git-btn"
-      >
-        Git
-      </a>
-    </article>
 
   </div>
 </section>
