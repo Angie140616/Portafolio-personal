@@ -1,45 +1,87 @@
+.abilities-section {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.abilities-section h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.abilities {
+  width: 80%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 40px;
+  align-items: start;
+}
+
 .skill-card {
-  width: 400px;
+  width: 100%;
   border: 1px solid #3a5f7d;
   background: rgba(10, 25, 47, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 320px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-card-title {
   background: #1f3cff;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   font-weight: bold;
+  font-size: 1.1rem;
 }
-
 
 .skill-card-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
+  padding: 25px;
+  flex: 1;
 }
-
 
 .skill-card-content img {
-  width: 90px;
+  width: 80px;
   height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.abilities-container, .abilities-container2 {
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 50px;
-    margin: auto;
-}
-
-.abilities{
-    h4{
-        margin: 3rem auto;
-        text-align: center;
-    }
+.skill-card-content img:hover {
+  transform: scale(1.1);
 }
 
 
+/* Tablets */
+
+@media (max-width: 992px) {
+  .abilities {
+    width: 90%;
+    gap: 30px;
+  }
+}
+
+
+/* Mobiles */
+
+@media (max-width: 768px) {
+  .abilities {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .skill-card-content img {
+    width: 70px;
+  }
+}
