@@ -3,52 +3,34 @@ import { Fragment, useEffect, useState } from 'react';
 import ComponentAbilities from '../cardAbilities/componentAbilities';
 import ComponentSeparator from '../separator/componentSeparator';
 import ComponentProjects from '../cardProjects/ComponentProjects';
-// imágenes
-import javascript from '../../components/img/tecnologias/javascript.png';
-import css from '../../components/img/tecnologias/css.png';
-import boostrap from '../../components/img/tecnologias/Boostrap.png';
-import sass from '../../components/img/tecnologias/sass.png';
-import react from '../../components/img/tecnologias/react.png';
-import php from '../../components/img/tecnologias/PHP-logo.svg.png';
-import mysql from '../../components/img/tecnologias/mysql.png';
-import mvc from '../../components/img/tecnologias/mvc.png';
-import scrum from '../../components/img/tecnologias/scrum.png';
-import git from '../../components/img/tecnologias/git.webp';
-import lucidchard from '../../components/img/tecnologias/Lucidchard.png';
-import miro from '../../components/img/tecnologias/miro.svg';
-import trello from '../../components/img/tecnologias/trello.svg';
-import npm from '../../components/img/tecnologias/Npm.png';
-import node from '../../components/img/tecnologias/node.webp';
-import recetarioProject from '../../components/img/proyectos/recetario online.png';
-import projectGrd from '../../components/img/proyectos/proyectoGrado.png';
-import yoImg from '../../components/img/yp.jpg';
 
 export const BodyHome = () => {
   const texts = [
-  'Desarrolladora Full Stack',
-  'Angie Andrea Buitrago Patiño'
-];
+    'Desarrolladora Full Stack',
+    'Angie Andrea Buitrago Patiño'
+  ];
 
-const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    setIndex((prev) => (prev + 1) % texts.length);
-  }, 2500); // tiempo entre cambios
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % texts.length);
+    }, 2500);
 
-  return () => clearInterval(interval);
-}, []);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <Fragment>
       <section className='body-home'>
         <div className="body-home__container1">
           <h1>{texts[index]}</h1>
+
           <p>
-            Soy desarrolladora full stack con afinidad por el frontend y la 
+            Soy desarrolladora full stack con afinidad por el frontend y la
             experiencia de usuario.<br />
-            Disfruto crear interfaces bien pensadas, 
-            cuidar los detalles visuales y comprender el propósito 
+            Disfruto crear interfaces bien pensadas,
+            cuidar los detalles visuales y comprender el propósito
             detrás de cada proyecto para construir soluciones funcionales y claras.
           </p>
 
@@ -60,161 +42,132 @@ useEffect(() => {
 
         <div className="about-me1">
           <div className="imgYo">
-            <img src={yoImg} alt="Foto Angie" />
+            <img src="/img/yp.jpg" alt="Foto Angie" />
           </div>
         </div>
       </section>
 
       <ComponentSeparator />
+
       <section className="abilities-section">
 
-  <h3>Habilidades técnicas</h3>
+        <h3>Habilidades técnicas</h3>
 
-  <div className="abilities">
+        <div className="abilities">
 
-    <ComponentAbilities
-      title="Front-end"
-      abilities={[
-        { img: javascript, alt: "Javascript" },
-        { img: css, alt: "Css" },
-        { img: boostrap, alt: "Boostrap" },
-        { img: sass, alt: "sass" },
-        { img: react, alt: "react" }
-      ]}
-    />
+          <ComponentAbilities
+            title="Front-end"
+            abilities={[
+              { img: "/img/tecnologias/javascript.png", alt: "Javascript" },
+              { img: "/img/tecnologias/css.png", alt: "Css" },
+              { img: "/img/tecnologias/Boostrap.png", alt: "Boostrap" },
+              { img: "/img/tecnologias/sass.png", alt: "sass" },
+              { img: "/img/tecnologias/react.png", alt: "react" }
+            ]}
+          />
 
-    <ComponentAbilities
-      title="Back-end"
-      abilities={[
-        { img: php, alt: "Php" },
-        { img: mysql, alt: "mysql" },
-        { img: node, alt: "node" }
-      ]}
-    />
+          <ComponentAbilities
+            title="Back-end"
+            abilities={[
+              { img: "/img/tecnologias/PHP-logo.svg.png", alt: "Php" },
+              { img: "/img/tecnologias/mysql.png", alt: "mysql" },
+              { img: "/img/tecnologias/node.webp", alt: "node" }
+            ]}
+          />
 
-  </div>
+        </div>
 
-  <br />
-  <h3>Herramientas y metodologías</h3>
- 
-  <div className="abilities">
+        <br />
+        <h3>Herramientas y metodologías</h3>
 
-    <ComponentAbilities
-      title="Herramientas"
-      abilities={[
-        { img: git, alt: "git" },
-        { img: npm, alt: "npm" },
-        { img: trello, alt: "trello" },
-        { img: miro, alt: "miro" },
-        { img: lucidchard, alt: "lucidchart" }
-      ]}
-    />
+        <div className="abilities">
 
-    <ComponentAbilities
-      title="Metodologías"
-      abilities={[
-        { img: scrum, alt: "scrum" },
-        { img: mvc, alt: "mvc" }
-      ]}
-    />
+          <ComponentAbilities
+            title="Herramientas"
+            abilities={[
+              { img: "/img/tecnologias/git.webp", alt: "git" },
+              { img: "/img/tecnologias/Npm.png", alt: "npm" },
+              { img: "/img/tecnologias/trello.svg", alt: "trello" },
+              { img: "/img/tecnologias/miro.svg", alt: "miro" },
+              { img: "/img/tecnologias/Lucidchard.png", alt: "lucidchart" }
+            ]}
+          />
 
-  </div>
+          <ComponentAbilities
+            title="Metodologías"
+            abilities={[
+              { img: "/img/tecnologias/scrum.png", alt: "scrum" },
+              { img: "/img/tecnologias/mvc.png", alt: "mvc" }
+            ]}
+          />
 
-</section>
-<ComponentSeparator />
-<section className="projects">
+        </div>
 
-  <h3>Mis Proyectos</h3>
-  <p className="subtitle">
-    Aplicaciones reales y en desarrollo
-  </p>
+      </section>
 
-  <div className="projects-grid">
+      <ComponentSeparator />
 
-    <ComponentProjects
-      title="Recetario Online"
-      image={recetarioProject}
-      description="Aplicación web para gestionar y consultar recetas de cocina."
+      <section className="projects">
 
-      tags={[
-        "PHP",
-        "MySQL",
-        "Javascript",
-        "MVC"
-      ]}
+        <h3>Mis Proyectos</h3>
 
-      features={[
-        "Registro e inicio de sesión",
-        "CRUD de recetas",
-        "Buscador de recetas",
-        "Diseño responsive"
-      ]}
+        <p className="subtitle">
+          Aplicaciones reales y en desarrollo
+        </p>
 
-      status="Finalizado"
+        <div className="projects-grid">
 
-      github="https://github.com/Angie140616/Panem"
-    />
+          <ComponentProjects
+            title="Saboria tu recetario"
+            image="/img/proyectos/recetario online.png"
+            description="sistema para gestionar recetas, búsqueda y organización de platos con CRUD completo y autenticación."
+            tags={["PHP", "MySQL", "Javascript", "MVC"]}
+            features={[
+              "Registro e inicio de sesión",
+              "CRUD de recetas",
+              "Buscador de recetas",
+              "Diseño responsive"
+            ]}
+            status="Finalizado"
+            github="https://github.com/Angie140616/Panem"
+          />
 
-    <ComponentProjects
-      title="Proyecto de Grado"
-      image={projectGrd}
-      description="Sistema web desarrollado para la gestión de inventario y administración de proveedores."
+          <ComponentProjects
+            title="GestionINVZ(GINVZ)"
+            image="/img/proyectos/proyectoGrado.png"
+            description="Sistema web desarrollado para la gestión de inventario y administración de proveedores."
+            tags={["PHP", "MVC", "Bootstrap", "MySQL", "Javascript"]}
+            features={[
+              "Gestión de usuarios",
+              "Panel administrativo",
+              "Reportes dinámicos",
+              "Control de acceso"
+            ]}
+            status="Finalizado"
+            github="https://github.com/Angie140616/GINVZ"
+          />
 
-      tags={[
-        "PHP",
-        "MVC",
-        "Bootstrap",
-        "MySQL",
-        "Javascript"
-      ]}
+          <ComponentProjects
+            title="Sistema de Gestión para Local"
+            image="/img/proyectos/Picando y tomando.png"
+            description="Sistema de escritorio orientado al control de consumo, administración de mesas e inventario para un establecimiento."
+            tags={["Node.js", "React", "Sass", "MySQL", "Javascript"]}
+            features={[
+              "Control de consumo por mesa",
+              "Registro y gestión de pedidos",
+              "Estado de pago de clientes",
+              "Administración de inventario",
+              "CRUD de productos",
+              "Interfaz orientada a escritorio"
+            ]}
+            status="En desarrollo"
+            github="https://github.com/Angie140616/Portafolio-personal"
+          />
 
-      features={[
-        "Gestión de usuarios",
-        "Panel administrativo",
-        "Reportes dinámicos",
-        "Control de acceso"
-      ]}
+        </div>
 
-      status="Finalizado"
-
-      github="https://github.com/Angie140616/GINVZ"
-    />
-
-    <ComponentProjects
-      title="Sistema de Gestión para Local"
-      image={yoImg}
-      description=" Sistema de escritorio orientado al control de consumo, administración de mesas e inventario para un establecimiento."
-
-      tags={[
-        "Node.js",
-        "React",
-        "Sass",
-        "MySQL",
-        "Javascript",
-      ]}
-
-      features={[
-        "Control de consumo por mesa",
-        "Registro y gestión de pedidos",
-        "Estado de pago de clientes",
-        "Administración de inventario",
-        "CRUD de productos",
-        "Interfaz orientada a escritorio"
-      ]}
-
-      status="En desarrollo"
-
-      github="https://github.com/Angie140616/Portafolio-personal"
-    />
-
-  </div>
-
-</section>
-
-
+      </section>
 
     </Fragment>
   );
 };
-
-
