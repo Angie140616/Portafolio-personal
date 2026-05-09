@@ -35,8 +35,15 @@ export const BodyHome = () => {
           </p>
 
           <div className="git">
-            <button className="btn btn-primary">GIT</button>
-            <button className="btn btn-primary">Ver proyectos</button>
+            <button className="btn btn-primary" onClick={() => window.open("https://github.com/Angie140616/Portafolio-personal", "_blank")}>
+              Ver GitHub
+            </button>
+            <button className="btn btn-primary" onClick={() => {
+              document.querySelector(".projects").scrollIntoView({ behavior: "smooth" });
+            }}>
+            Ver proyectos
+            </button>
+          
           </div>
         </div>
 
