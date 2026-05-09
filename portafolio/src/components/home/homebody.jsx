@@ -2,7 +2,7 @@ import { Fragment, useEffect, useState } from 'react';
 
 import ComponentAbilities from '../cardAbilities/componentAbilities';
 import ComponentSeparator from '../separator/componentSeparator';
-import ComponentProjects from '../cardProjects/ComponentProjects';
+import ComponentProjects from '../cardProjects/componentProjects';
 
 export const BodyHome = () => {
   const texts = [
