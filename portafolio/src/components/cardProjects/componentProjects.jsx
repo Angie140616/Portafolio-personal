@@ -1,6 +1,7 @@
 const ComponentProjects = ({
   title,
   image,
+  video,
   description,
   tags = [],
   features = [],
@@ -15,11 +16,22 @@ const ComponentProjects = ({
       </div>
 
       <div className="card-image">
-        <img
-          src={image}
-          alt={title}
-          className="imgProjects"
-        />
+        {video ? (
+          <video
+            src={video}
+            className="imgProjects"
+            controls
+            preload="auto"
+            playsInline
+            muted={false}
+          />
+        ) : (
+          <img
+            src={image}
+            alt={title}
+            className="imgProjects"
+          />
+        )}
       </div>
 
       <p className="description">
@@ -35,19 +47,13 @@ const ComponentProjects = ({
       </div>
 
       <ul className="features">
-
         <li>
-          <strong>
-            Funcionalidades principales:
-          </strong>
+          <strong>Funcionalidades principales:</strong>
         </li>
 
         {features.map((feature, index) => (
-          <li key={index}>
-            {feature}
-          </li>
+          <li key={index}>{feature}</li>
         ))}
-
       </ul>
 
       <span className={`status ${status?.toLowerCase()}`}>

@@ -139,9 +139,9 @@ export const BodyHome = () => {
             github="https://github.com/Angie140616/Panem"
           />
 
-          <ComponentProjects
-            title="GestionINVZ(GINVZ)"
-            image="/img/proyectos/proyectoGrado.png"
+         <ComponentProjects
+            title="GestionINVZ"
+            video="/img/videosMuestra/GESTIONINVZDEMO.mp4"
             description="Sistema web desarrollado para la gestión de inventario y administración de proveedores."
             tags={["PHP", "MVC", "Bootstrap", "MySQL", "Javascript"]}
             features={[
