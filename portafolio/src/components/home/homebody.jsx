@@ -168,7 +168,7 @@ export const BodyHome = () => {
               "Interfaz orientada a escritorio"
             ]}
             status="En desarrollo"
-            github="https://github.com/Angie140616/Portafolio-personal"
+            github="https://github.com/Angie140616/Picando-y-tomando-apk"
           />
 
         </div>
