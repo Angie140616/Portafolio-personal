@@ -27,11 +27,9 @@ export const BodyHome = () => {
           <h1>{texts[index]}</h1>
 
           <p>
-            Soy desarrolladora full stack con afinidad por el frontend y la
-            experiencia de usuario.<br />
-            Disfruto crear interfaces bien pensadas,
-            cuidar los detalles visuales y comprender el propósito
-            detrás de cada proyecto para construir soluciones funcionales y claras.
+           Soy desarrolladora full stack con interés en el desarrollo de software, 
+           el análisis de datos y la mejora continua de procesos. <br></br>
+           Disfruto comprender las necesidades de cada proyecto, transformar información en soluciones útiles y crear aplicaciones funcionales, intuitivas y bien estructuradas.
           </p>
 
           <div className="git">
@@ -96,7 +94,8 @@ export const BodyHome = () => {
               { img: "/img/tecnologias/Npm.png", alt: "npm" },
               { img: "/img/tecnologias/trello.svg", alt: "trello" },
               { img: "/img/tecnologias/miro.svg", alt: "miro" },
-              { img: "/img/tecnologias/Lucidchard.png", alt: "lucidchart" }
+              { img: "/img/tecnologias/Lucidchard.png", alt: "lucidchart" },
+              { img: "img/tecnologias/excel.png", alt: "excel"}
             ]}
           />
 
