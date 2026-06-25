@@ -7,6 +7,7 @@ import ComponentProjects from '../cardProjects/componentProjects';
 export const BodyHome = () => {
   const texts = [
     'Desarrolladora Full Stack',
+    'Analista de datos junior',
     'Angie Andrea Buitrago Patiño'
   ];
 
