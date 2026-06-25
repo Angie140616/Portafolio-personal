@@ -118,7 +118,8 @@ export const BodyHome = () => {
         <h3>Mis Proyectos</h3>
 
         <p className="subtitle">
-          Aplicaciones reales y en desarrollo
+          Aplicaciones reales y en desarrollo<br></br>
+          Desarrollo full-stack
         </p>
 
         <div className="projects-grid">
@@ -169,9 +170,46 @@ export const BodyHome = () => {
             status="En desarrollo"
             github="https://github.com/Angie140616/Picando-y-tomando-apk"
           />
-
+          <br></br>
+          <p className="subtitle">
+              Analisis de datos
+            </p>
+            <br></br>
+            <ComponentProjects
+              title="Dashboard de Ventas Interactivo en Excel"
+              image="/img/proyectos/Dashboard.png"
+              description="Dashboard desarrollado en Excel utilizando tablas dinámicas, segmentadores, KPIs y funciones avanzadas para analizar ingresos, ganancias y comportamiento de ventas por ciudad, vendedor y categoría."
+              tags={["Excel", "Buscar v/Buscar x", "Tablas dinamicas", "Kpis", "Segmentadores", "Dashboard"]}
+              features={[
+              "Análisis y limpieza de datos.",
+              "Relación de información mediante BUSCARX.",
+              "Cálculo de KPIs (Ingresos, Costos, Ganancias y Margen)",
+              "Creación de tablas dinámicas.",
+              "Implementación de segmentadores interactivos.",
+              "Diseño de dashboard ejecutivo en Excel."
+              ]}
+              status="Terminado con posibilidad de mejoras"
+              download="/img/proyectos/Dashboard.xlsx"
+            />
+            <ComponentProjects
+              title="Sistema de Gestión para Panadería"
+              image="/img/proyectos/DiagramaUML.png"
+              description="Diseño y construcción de una base de datos relacional para la gestión de inventario y producción. Incluye modelado UML, creación de tablas, definición de llaves primarias y foráneas, relaciones entre entidades e implementación de procedimientos almacenados para la administración de la información."
+              tags={["MySQL", "SQL", "UML", "Procedimientos almacenados", "Diseño de base de datos"]}
+              features={[
+              "Diseño del diagrama UML.",
+              "Creación de tablas relacionales.",
+              "Implementación de llaves primarias y foráneas.",
+              "Definición de relaciones entre entidades.",
+              "Desarrollo de procedimientos almacenados.",
+              "Gestión de integridad y consistencia de datos."
+              ]}
+              status="Terminado"
+              download="/img/proyectos/bd/panem.sql"
+            />
         </div>
-
+            
+        
       </section>
 
     </Fragment>

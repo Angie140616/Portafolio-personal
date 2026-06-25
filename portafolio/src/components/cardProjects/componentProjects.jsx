@@ -6,7 +6,8 @@ const ComponentProjects = ({
   tags = [],
   features = [],
   status,
-  github
+  github,
+  download
 }) => {
   return (
     <article className="project-card">
@@ -60,16 +61,30 @@ const ComponentProjects = ({
         {status}
       </span>
 
-      {github && (
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="git-btn"
-        >
-          GitHub
-        </a>
-      )}
+      <div className="project-buttons">
+
+        {github && (
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="git-btn"
+          >
+            GitHub
+          </a>
+        )}
+
+        {download && (
+          <a
+            href={download}
+            download
+            className="git-btn"
+          >
+            Descargar
+          </a>
+        )}
+
+      </div>
 
     </article>
   );
