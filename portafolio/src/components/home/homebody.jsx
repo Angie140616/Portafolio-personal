@@ -177,9 +177,9 @@ export const BodyHome = () => {
             </p>
             <br></br>
             <ComponentProjects
-              title="Dashboard de Ventas Interactivo en Excel"
+              title="Dashboard de Gestión de Nómina"
               image="/img/proyectos/DashboardA.png"
-              description="Dashboard desarrollado en Excel utilizando tablas dinámicas, segmentadores, KPIs y funciones avanzadas para analizar ingresos, ganancias y comportamiento de ventas por ciudad, vendedor y categoría."
+              description="Desarrollo de un dashboard interactivo en Excel para el análisis y seguimiento de la nómina de una empresa. Incluye indicadores clave como total de salarios, horas extras, deducciones, bonificaciones, costo de nómina por área y cargo, además de filtros dinámicos y visualizaciones para facilitar la toma de decisiones y el control de la información."
               tags={["Excel", "Buscar v/Buscar x", "Tablas dinamicas", "Kpis", "Segmentadores", "Dashboard"]}
               features={[
               "Análisis y limpieza de datos.",
