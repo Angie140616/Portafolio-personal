@@ -178,7 +178,7 @@ export const BodyHome = () => {
             <br></br>
             <ComponentProjects
               title="Dashboard de Ventas Interactivo en Excel"
-              image="/img/proyectos/Dashboard.png"
+              image="/img/proyectos/DashboardA.png"
               description="Dashboard desarrollado en Excel utilizando tablas dinámicas, segmentadores, KPIs y funciones avanzadas para analizar ingresos, ganancias y comportamiento de ventas por ciudad, vendedor y categoría."
               tags={["Excel", "Buscar v/Buscar x", "Tablas dinamicas", "Kpis", "Segmentadores", "Dashboard"]}
               features={[
@@ -189,8 +189,8 @@ export const BodyHome = () => {
               "Implementación de segmentadores interactivos.",
               "Diseño de dashboard ejecutivo en Excel."
               ]}
-              status="Terminado con posibilidad de mejoras"
-              download="/img/proyectos/Dashboard.xlsx"
+              status="Terminado"
+              download="/img/proyectos/bd/DASBOARD2.xlsx"
             />
             <ComponentProjects
               title="Sistema de Gestión para Panadería"
